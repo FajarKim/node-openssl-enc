@@ -1,0 +1,41 @@
+{
+  "name": "@fajarkim/node-openssl-enc",
+  "version": "0.0.1",
+  "description": "A Node.js CLI tool and library for encryption and decryption with OpenSSL Enc.",
+  "main": "index.js",
+  "bin": {
+    "ncssl": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FajarKim/node-openssl-enc.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "keywords": [
+    "openssl",
+    "node",
+    "cryptography",
+    "encrypt",
+    "decrypt",
+    "cipher",
+    "decipher"
+  ],
+  "author": "Rangga Fajar Oktariansyah",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/FajarKim/node-openssl-enc/issues"
+  },
+  "homepage": "https://github.com/FajarKim/node-openssl-enc#readme",
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
