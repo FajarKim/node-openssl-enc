@@ -6,7 +6,7 @@ const { encrypt, decrypt } = require("../index");
  *********************************************************/
 describe("Encryption and Decryption data test using AES-128", function () {
   // AES128 algorithm
-  it("should encrypt and decrypt and decrypt data using AES128 algorithm", function () {
+  it("should encrypt and decrypt data using AES128 algorithm", function () {
     const algorithm = "aes128";
     const data = "Hello, World!";
     const password = "secret";
@@ -18,7 +18,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES128 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES128 algorithm with Base64", function () {
     const algorithm = "aes128";
     const data = "Hello, World!";
     const password = "secret";
@@ -31,7 +31,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES128 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES128 algorithm with Binary", function () {
     const algorithm = "aes128";
     const data = "Hello, World!";
     const password = "secret";
@@ -44,7 +44,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES128 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES128 algorithm with Hex", function () {
     const algorithm = "aes128";
     const data = "Hello, World!";
     const password = "secret";
@@ -57,7 +57,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES128 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES128 algorithm with Zlib", function () {
     const algorithm = "aes128";
     const data = "Hello, World!";
     const password = "secret";
@@ -83,7 +83,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CBC algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CBC algorithm with Base64", function () {
     const algorithm = "aes-128-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -96,7 +96,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CBC algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CBC algorithm with Binary", function () {
     const algorithm = "aes-128-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -109,7 +109,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CBC algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CBC algorithm with Hex", function () {
     const algorithm = "aes-128-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -122,7 +122,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CBC algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CBC algorithm with Zlib", function () {
     const algorithm = "aes-128-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -148,7 +148,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CCM algorithm with Base64", function () {
     const algorithm = "aes-128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -161,7 +161,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CCM algorithm with Binary", function () {
     const algorithm = "aes-128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -174,7 +174,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CCM algorithm with Hex", function () {
     const algorithm = "aes-128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -187,7 +187,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CCM algorithm with Zlib", function () {
     const algorithm = "aes-128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -213,7 +213,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CFB algorithm with Base64", function () {
     const algorithm = "aes-128-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -226,7 +226,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CFB algorithm with Binary", function () {
     const algorithm = "aes-128-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -239,7 +239,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CFB algorithm with Hex", function () {
     const algorithm = "aes-128-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -252,7 +252,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CFB algorithm with Zlib", function () {
     const algorithm = "aes-128-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -278,7 +278,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB1 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CFB1 algorithm with Base64", function () {
     const algorithm = "aes-128-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -291,7 +291,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB1 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CFB1 algorithm with Binary", function () {
     const algorithm = "aes-128-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -304,7 +304,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB1 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CFB1 algorithm with Hex", function () {
     const algorithm = "aes-128-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -317,7 +317,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB1 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CFB1 algorithm with Zlib", function () {
     const algorithm = "aes-128-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -343,7 +343,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB8 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CFB8 algorithm with Base64", function () {
     const algorithm = "aes-128-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -356,7 +356,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB8 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CFB8 algorithm with Binary", function () {
     const algorithm = "aes-128-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -369,7 +369,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB8 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CFB8 algorithm with Hex", function () {
     const algorithm = "aes-128-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -382,7 +382,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CFB8 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CFB8 algorithm with Zlib", function () {
     const algorithm = "aes-128-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -408,7 +408,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CTR algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-CTR algorithm with Base64", function () {
     const algorithm = "aes-128-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -421,7 +421,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CTR algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-CTR algorithm with Binary", function () {
     const algorithm = "aes-128-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -434,7 +434,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CTR algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-CTR algorithm with Hex", function () {
     const algorithm = "aes-128-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -447,7 +447,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-CTR algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-CTR algorithm with Zlib", function () {
     const algorithm = "aes-128-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -473,7 +473,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-ECB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-ECB algorithm with Base64", function () {
     const algorithm = "aes-128-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -486,7 +486,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-ECB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-ECB algorithm with Binary", function () {
     const algorithm = "aes-128-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -499,7 +499,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-ECB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-ECB algorithm with Hex", function () {
     const algorithm = "aes-128-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -512,7 +512,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-ECB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-ECB algorithm with Zlib", function () {
     const algorithm = "aes-128-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -538,7 +538,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-GCM algorithm with Base64", function () {
     const algorithm = "aes-128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -551,7 +551,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-GCM algorithm with Binary", function () {
     const algorithm = "aes-128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -564,7 +564,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-GCM algorithm with Hex", function () {
     const algorithm = "aes-128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -577,7 +577,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-GCM algorithm with Zlib", function () {
     const algorithm = "aes-128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -603,7 +603,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OCB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-OCB algorithm with Base64", function () {
     const algorithm = "aes-128-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -616,7 +616,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OCB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-OCB algorithm with Binary", function () {
     const algorithm = "aes-128-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -629,7 +629,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OCB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-OCB algorithm with Hex", function () {
     const algorithm = "aes-128-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -642,7 +642,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OCB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-OCB algorithm with Zlib", function () {
     const algorithm = "aes-128-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -668,7 +668,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-128-OFB algorithm with Base64", function () {
     const algorithm = "aes-128-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -681,7 +681,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-128-OFB algorithm with Binary", function () {
     const algorithm = "aes-128-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -694,7 +694,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-128-OFB algorithm with Hex", function () {
     const algorithm = "aes-128-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -707,7 +707,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-128-OFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-128-OFB algorithm with Zlib", function () {
     const algorithm = "aes-128-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -726,7 +726,7 @@ describe("Encryption and Decryption data test using AES-128", function () {
  *********************************************************/
 describe("Encryption and Decryption data test using AES-192", function () {
   // AES192 algorithm
-  it("should encrypt and decrypt and decrypt data using AES192 algorithm", function () {
+  it("should encrypt and decrypt data using AES192 algorithm", function () {
     const algorithm = "aes192";
     const data = "Hello, World!";
     const password = "secret";
@@ -738,7 +738,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES192 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES192 algorithm with Base64", function () {
     const algorithm = "aes192";
     const data = "Hello, World!";
     const password = "secret";
@@ -751,7 +751,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES192 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES192 algorithm with Binary", function () {
     const algorithm = "aes192";
     const data = "Hello, World!";
     const password = "secret";
@@ -764,7 +764,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES192 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES192 algorithm with Hex", function () {
     const algorithm = "aes192";
     const data = "Hello, World!";
     const password = "secret";
@@ -777,7 +777,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES192 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES192 algorithm with Zlib", function () {
     const algorithm = "aes192";
     const data = "Hello, World!";
     const password = "secret";
@@ -803,7 +803,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CBC algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CBC algorithm with Base64", function () {
     const algorithm = "aes-192-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -816,7 +816,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CBC algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CBC algorithm with Binary", function () {
     const algorithm = "aes-192-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -829,7 +829,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CBC algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CBC algorithm with Hex", function () {
     const algorithm = "aes-192-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -842,7 +842,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CBC algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CBC algorithm with Zlib", function () {
     const algorithm = "aes-192-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -868,7 +868,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CCM algorithm with Base64", function () {
     const algorithm = "aes-192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -881,7 +881,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CCM algorithm with Binary", function () {
     const algorithm = "aes-192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -894,7 +894,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CCM algorithm with Hex", function () {
     const algorithm = "aes-192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -907,7 +907,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CCM algorithm with Zlib", function () {
     const algorithm = "aes-192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -933,7 +933,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CFB algorithm with Base64", function () {
     const algorithm = "aes-192-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -946,7 +946,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CFB algorithm with Binary", function () {
     const algorithm = "aes-192-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -959,7 +959,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CFB algorithm with Hex", function () {
     const algorithm = "aes-192-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -972,7 +972,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CFB algorithm with Zlib", function () {
     const algorithm = "aes-192-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -998,7 +998,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB1 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CFB1 algorithm with Base64", function () {
     const algorithm = "aes-192-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1011,7 +1011,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB1 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CFB1 algorithm with Binary", function () {
     const algorithm = "aes-192-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1024,7 +1024,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB1 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CFB1 algorithm with Hex", function () {
     const algorithm = "aes-192-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1037,7 +1037,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB1 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CFB1 algorithm with Zlib", function () {
     const algorithm = "aes-192-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1063,7 +1063,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB8 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CFB8 algorithm with Base64", function () {
     const algorithm = "aes-192-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1076,7 +1076,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB8 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CFB8 algorithm with Binary", function () {
     const algorithm = "aes-192-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1089,7 +1089,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB8 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CFB8 algorithm with Hex", function () {
     const algorithm = "aes-192-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1102,7 +1102,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CFB8 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CFB8 algorithm with Zlib", function () {
     const algorithm = "aes-192-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1128,7 +1128,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CTR algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-CTR algorithm with Base64", function () {
     const algorithm = "aes-192-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1141,7 +1141,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CTR algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-CTR algorithm with Binary", function () {
     const algorithm = "aes-192-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1154,7 +1154,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CTR algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-CTR algorithm with Hex", function () {
     const algorithm = "aes-192-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1167,7 +1167,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-CTR algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-CTR algorithm with Zlib", function () {
     const algorithm = "aes-192-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1193,7 +1193,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-ECB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-ECB algorithm with Base64", function () {
     const algorithm = "aes-192-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1206,7 +1206,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-ECB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-ECB algorithm with Binary", function () {
     const algorithm = "aes-192-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1219,7 +1219,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-ECB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-ECB algorithm with Hex", function () {
     const algorithm = "aes-192-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1232,7 +1232,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-ECB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-ECB algorithm with Zlib", function () {
     const algorithm = "aes-192-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1258,7 +1258,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-GCM algorithm with Base64", function () {
     const algorithm = "aes-192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1271,7 +1271,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-GCM algorithm with Binary", function () {
     const algorithm = "aes-192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1284,7 +1284,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-GCM algorithm with Hex", function () {
     const algorithm = "aes-192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1297,7 +1297,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-GCM algorithm with Zlib", function () {
     const algorithm = "aes-192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1323,7 +1323,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OCB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-OCB algorithm with Base64", function () {
     const algorithm = "aes-192-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1336,7 +1336,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OCB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-OCB algorithm with Binary", function () {
     const algorithm = "aes-192-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1349,7 +1349,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OCB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-OCB algorithm with Hex", function () {
     const algorithm = "aes-192-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1362,7 +1362,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OCB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-OCB algorithm with Zlib", function () {
     const algorithm = "aes-192-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1388,7 +1388,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-192-OFB algorithm with Base64", function () {
     const algorithm = "aes-192-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1401,7 +1401,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-192-OFB algorithm with Binary", function () {
     const algorithm = "aes-192-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1414,7 +1414,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-192-OFB algorithm with Hex", function () {
     const algorithm = "aes-192-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1427,7 +1427,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-192-OFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-192-OFB algorithm with Zlib", function () {
     const algorithm = "aes-192-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1446,7 +1446,7 @@ describe("Encryption and Decryption data test using AES-192", function () {
  *********************************************************/
 describe("Encryption and Decryption data test using AES-256", function () {
   // AES256 algorithm
-  it("should encrypt and decrypt and decrypt data using AES256 algorithm", function () {
+  it("should encrypt and decrypt data using AES256 algorithm", function () {
     const algorithm = "aes256";
     const data = "Hello, World!";
     const password = "secret";
@@ -1458,7 +1458,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES256 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES256 algorithm with Base64", function () {
     const algorithm = "aes256";
     const data = "Hello, World!";
     const password = "secret";
@@ -1471,7 +1471,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES256 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES256 algorithm with Binary", function () {
     const algorithm = "aes256";
     const data = "Hello, World!";
     const password = "secret";
@@ -1484,7 +1484,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES256 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES256 algorithm with Hex", function () {
     const algorithm = "aes256";
     const data = "Hello, World!";
     const password = "secret";
@@ -1497,7 +1497,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES256 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES256 algorithm with Zlib", function () {
     const algorithm = "aes256";
     const data = "Hello, World!";
     const password = "secret";
@@ -1523,7 +1523,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CBC algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CBC algorithm with Base64", function () {
     const algorithm = "aes-256-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -1536,7 +1536,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CBC algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CBC algorithm with Binary", function () {
     const algorithm = "aes-256-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -1549,7 +1549,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CBC algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CBC algorithm with Hex", function () {
     const algorithm = "aes-256-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -1562,7 +1562,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CBC algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CBC algorithm with Zlib", function () {
     const algorithm = "aes-256-cbc";
     const data = "Hello, World!";
     const password = "secret";
@@ -1588,7 +1588,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CCM algorithm with Base64", function () {
     const algorithm = "aes-256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1601,7 +1601,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CCM algorithm with Binary", function () {
     const algorithm = "aes-256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1614,7 +1614,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CCM algorithm with Hex", function () {
     const algorithm = "aes-256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1627,7 +1627,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CCM algorithm with Zlib", function () {
     const algorithm = "aes-256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1653,7 +1653,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CFB algorithm with Base64", function () {
     const algorithm = "aes-256-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1666,7 +1666,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CFB algorithm with Binary", function () {
     const algorithm = "aes-256-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1679,7 +1679,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CFB algorithm with Hex", function () {
     const algorithm = "aes-256-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1692,7 +1692,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CFB algorithm with Zlib", function () {
     const algorithm = "aes-256-cfb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1718,7 +1718,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB1 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CFB1 algorithm with Base64", function () {
     const algorithm = "aes-256-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1731,7 +1731,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB1 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CFB1 algorithm with Binary", function () {
     const algorithm = "aes-256-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1744,7 +1744,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB1 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CFB1 algorithm with Hex", function () {
     const algorithm = "aes-256-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1757,7 +1757,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB1 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CFB1 algorithm with Zlib", function () {
     const algorithm = "aes-256-cfb1";
     const data = "Hello, World!";
     const password = "secret";
@@ -1783,7 +1783,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB8 algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CFB8 algorithm with Base64", function () {
     const algorithm = "aes-256-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1796,7 +1796,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB8 algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CFB8 algorithm with Binary", function () {
     const algorithm = "aes-256-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1809,7 +1809,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB8 algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CFB8 algorithm with Hex", function () {
     const algorithm = "aes-256-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1822,7 +1822,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CFB8 algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CFB8 algorithm with Zlib", function () {
     const algorithm = "aes-256-cfb8";
     const data = "Hello, World!";
     const password = "secret";
@@ -1848,7 +1848,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CTR algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-CTR algorithm with Base64", function () {
     const algorithm = "aes-256-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1861,7 +1861,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CTR algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-CTR algorithm with Binary", function () {
     const algorithm = "aes-256-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1874,7 +1874,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CTR algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-CTR algorithm with Hex", function () {
     const algorithm = "aes-256-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1887,7 +1887,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-CTR algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-CTR algorithm with Zlib", function () {
     const algorithm = "aes-256-ctr";
     const data = "Hello, World!";
     const password = "secret";
@@ -1913,7 +1913,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-ECB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-ECB algorithm with Base64", function () {
     const algorithm = "aes-256-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1926,7 +1926,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-ECB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-ECB algorithm with Binary", function () {
     const algorithm = "aes-256-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1939,7 +1939,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-ECB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-ECB algorithm with Hex", function () {
     const algorithm = "aes-256-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1952,7 +1952,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-ECB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-ECB algorithm with Zlib", function () {
     const algorithm = "aes-256-ecb";
     const data = "Hello, World!";
     const password = "secret";
@@ -1978,7 +1978,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-GCM algorithm with Base64", function () {
     const algorithm = "aes-256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -1991,7 +1991,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-GCM algorithm with Binary", function () {
     const algorithm = "aes-256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -2004,7 +2004,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-GCM algorithm with Hex", function () {
     const algorithm = "aes-256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -2017,7 +2017,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-GCM algorithm with Zlib", function () {
     const algorithm = "aes-256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -2043,7 +2043,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OCB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-OCB algorithm with Base64", function () {
     const algorithm = "aes-256-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2056,7 +2056,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OCB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-OCB algorithm with Binary", function () {
     const algorithm = "aes-256-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2069,7 +2069,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OCB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-OCB algorithm with Hex", function () {
     const algorithm = "aes-256-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2082,7 +2082,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OCB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-OCB algorithm with Zlib", function () {
     const algorithm = "aes-256-ocb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2108,7 +2108,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OFB algorithm with Base64", function () {
+  it("should encrypt and decrypt data using AES-256-OFB algorithm with Base64", function () {
     const algorithm = "aes-256-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2121,7 +2121,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OFB algorithm with Binary", function () {
+  it("should encrypt and decrypt data using AES-256-OFB algorithm with Binary", function () {
     const algorithm = "aes-256-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2134,7 +2134,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OFB algorithm with Hex", function () {
+  it("should encrypt and decrypt data using AES-256-OFB algorithm with Hex", function () {
     const algorithm = "aes-256-ofb";
     const data = "Hello, World!";
     const password = "secret";
@@ -2147,7 +2147,7 @@ describe("Encryption and Decryption data test using AES-256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using AES-256-OFB algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using AES-256-OFB algorithm with Zlib", function () {
     const algorithm = "aes-256-ofb";
     const data = "Hello, World!";
     const password = "secret";

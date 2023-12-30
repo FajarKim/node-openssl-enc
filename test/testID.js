@@ -18,7 +18,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES128-CCM algorithm with Base64", function () {
     const algorithm = "id-aes128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -31,7 +31,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES128-CCM algorithm with Binary", function () {
     const algorithm = "id-aes128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -44,7 +44,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES128-CCM algorithm with Hex", function () {
     const algorithm = "id-aes128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -57,7 +57,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES128-CCM algorithm with Zlib", function () {
     const algorithm = "id-aes128-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -83,7 +83,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES128-GCM algorithm with Base64", function () {
     const algorithm = "id-aes128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -96,7 +96,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES128-GCM algorithm with Binary", function () {
     const algorithm = "id-aes128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -109,7 +109,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES128-GCM algorithm with Hex", function () {
     const algorithm = "id-aes128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -122,7 +122,7 @@ describe("Encryption and Decryption data test using ID-AES128", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES128-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES128-GCM algorithm with Zlib", function () {
     const algorithm = "id-aes128-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -153,7 +153,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES192-CCM algorithm with Base64", function () {
     const algorithm = "id-aes192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -166,7 +166,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES192-CCM algorithm with Binary", function () {
     const algorithm = "id-aes192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -179,7 +179,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES192-CCM algorithm with Hex", function () {
     const algorithm = "id-aes192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -192,7 +192,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES192-CCM algorithm with Zlib", function () {
     const algorithm = "id-aes192-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -218,7 +218,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES192-GCM algorithm with Base64", function () {
     const algorithm = "id-aes192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -231,7 +231,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES192-GCM algorithm with Binary", function () {
     const algorithm = "id-aes192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -244,7 +244,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES192-GCM algorithm with Hex", function () {
     const algorithm = "id-aes192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -257,7 +257,7 @@ describe("Encryption and Decryption data test using ID-AES192", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES192-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES192-GCM algorithm with Zlib", function () {
     const algorithm = "id-aes192-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -288,7 +288,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-CCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES256-CCM algorithm with Base64", function () {
     const algorithm = "id-aes256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -301,7 +301,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-CCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES256-CCM algorithm with Binary", function () {
     const algorithm = "id-aes256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -314,7 +314,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-CCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES256-CCM algorithm with Hex", function () {
     const algorithm = "id-aes256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -327,7 +327,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-CCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES256-CCM algorithm with Zlib", function () {
     const algorithm = "id-aes256-ccm";
     const data = "Hello, World!";
     const password = "secret";
@@ -353,7 +353,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-GCM algorithm with Base64", function () {
+  it("should encrypt and decrypt data using ID-AES256-GCM algorithm with Base64", function () {
     const algorithm = "id-aes256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -366,7 +366,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-GCM algorithm with Binary", function () {
+  it("should encrypt and decrypt data using ID-AES256-GCM algorithm with Binary", function () {
     const algorithm = "id-aes256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -379,7 +379,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-GCM algorithm with Hex", function () {
+  it("should encrypt and decrypt data using ID-AES256-GCM algorithm with Hex", function () {
     const algorithm = "id-aes256-gcm";
     const data = "Hello, World!";
     const password = "secret";
@@ -392,7 +392,7 @@ describe("Encryption and Decryption data test using ID-AES256", function () {
     assert.ok(decryptedData);
   });
 
-  it("should encrypt and decrypt and decrypt data using ID-AES256-GCM algorithm with Zlib", function () {
+  it("should encrypt and decrypt data using ID-AES256-GCM algorithm with Zlib", function () {
     const algorithm = "id-aes256-gcm";
     const data = "Hello, World!";
     const password = "secret";
