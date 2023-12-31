@@ -98,7 +98,7 @@ To start using Node OpenSSL, follow these steps:
     -H, --hex              Encrypt or Decrypt data out using Hex
     -z, --zlib             Encrypt or Decrypt out data using Zlib
     -s, --special <mode>   Special tool for encryption/decryption with
-  Base64 or Zlib (not with cipher)
+                           Base64 or Zlib (not with cipher)
     -h, --help             display help for command
 
   This tool licensed under AGPL-3.0 License, see <https://github.com/FajarKim/node-openssl-enc/tree/master/LICENSE>
