@@ -8,24 +8,12 @@ const {
   encryptZlib, decryptZlib,
   algorithmSupported, algorithmUnsupported
 } = require("../index");
-const formatArrayToTable = require("../lib/arrayTable");
+const {
+  formatArrayToTable,
+  calculateColumns
+} = require("../lib/utils");
 const packageJsonPath = path.join(__dirname, "../package.json");
 const packageJson = require(packageJsonPath);
-
-/**
- * Calculate the number of columns based on data length and maximum column width.
- *
- * @param {Array} data - The data to be displayed in the table.
- * @param {number} maxColumnWidth - The maximum width for each column.
- * @returns {number} - The calculated number of columns.
- */
-
-const calculateColumns = (data, maxColumnWidth) => {
-  const terminalWidth = process.stdout.columns;
-  const maxColumns = Math.floor(terminalWidth / maxColumnWidth);
-  const columns = Math.min(maxColumns, Math.ceil(data.length / (terminalWidth / maxColumnWidth)));
-  return columns;
-};
 
 const maxColumn = 15;
 
