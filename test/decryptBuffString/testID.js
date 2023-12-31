@@ -2,7 +2,7 @@ const assert = require("assert");
 const { decrypt } = require("../../index");
 
 /*********************************************************
- *                       ID-AES128                         *
+ *                       ID-AES128                       *
  *********************************************************/
 describe("Decryption data buffer string test using ID-AES128", function () {
   it("should decrypt data buffer string using ID-AES128-CCM algorithm", function () {
@@ -27,7 +27,7 @@ describe("Decryption data buffer string test using ID-AES128", function () {
 });
 
 /*********************************************************
- *                       ID-AES192                         *
+ *                       ID-AES192                       *
  *********************************************************/
 describe("Decryption data buffer string test using ID-AES192", function () {
   it("should decrypt data buffer string using ID-AES192-CCM algorithm", function () {
@@ -52,7 +52,7 @@ describe("Decryption data buffer string test using ID-AES192", function () {
 });
 
 /*********************************************************
- *                       ID-AES256                         *
+ *                       ID-AES256                       *
  *********************************************************/
 describe("Decryption data buffer string test using ID-AES256", function () {
   it("should decrypt data buffer string using ID-AES256-CCM algorithm", function () {
