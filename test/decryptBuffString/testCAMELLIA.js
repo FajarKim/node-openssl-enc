@@ -2,7 +2,7 @@ const assert = require("assert");
 const { decrypt } = require("../../index");
 
 /*********************************************************
- *                       CAMELLIA-128                         *
+ *                     CAMELLIA-128                      *
  *********************************************************/
 describe("Decryption data buffer string test using CAMELLIA-128", function () {
   it("should decrypt data buffer string using CAMELLIA128 algorithm", function () {
@@ -87,7 +87,7 @@ describe("Decryption data buffer string test using CAMELLIA-128", function () {
 });
 
 /*********************************************************
- *                       CAMELLIA-192                         *
+ *                     CAMELLIA-192                      *
  *********************************************************/
 describe("Decryption data buffer string test using CAMELLIA-192", function () {
   it("should decrypt data buffer string using CAMELLIA192 algorithm", function () {
@@ -172,7 +172,7 @@ describe("Decryption data buffer string test using CAMELLIA-192", function () {
 });
 
 /*********************************************************
- *                       CAMELLIA-256                         *
+ *                     CAMELLIA-256                      *
  *********************************************************/
 describe("Decryption data buffer string test using CAMELLIA-256", function () {
   it("should decrypt data buffer string using CAMELLIA256 algorithm", function () {
