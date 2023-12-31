@@ -7,7 +7,7 @@
     "ncssl": "bin/cli.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test/**"
   },
   "repository": {
     "type": "git",
