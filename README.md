@@ -156,9 +156,10 @@ des-ede3-cfb1      des-ede3-cfb8      des-ede3-ecb
 des-ede3-ofb       des3               desx
 desx-cbc           id-aes128-ccm      id-aes128-gcm
 id-aes192-ccm      id-aes192-gcm      id-aes256-ccm
-id-aes256-gcm      sm4                sm4-cbc
-sm4-cfb            sm4-ctr            sm4-ecb
-sm4-ofb
+id-aes256-gcm      seed               seed-cbc
+seed-cfb           seed-ecb           seed-ofb
+sm4                sm4-cbc            sm4-cfb
+sm4-ctr            sm4-ecb            sm4-ofb
 ```
 
 ### License
