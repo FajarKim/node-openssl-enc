@@ -5,7 +5,7 @@ const { decrypt } = require("../../index");
  *                         SM4                           *
  *********************************************************/
 describe("Decryption data buffer string test using SM4", function () {
-  it("should decrypt data buffer string using AES128 algorithm", function () {
+  it("should decrypt data buffer string using SM4 algorithm", function () {
     const algorithm = "sm4";
     const data = "<Buffer 53 61 6c 74 65 64 5f 5f 08 61 eb b7 16 2f 56 9c 75 6e 78 50 8e 6f 2e 79 86 27 1e 7c f6 5b 5d 39 41 e1 64 6b ac cb ef 49 5f bf 05 72 a8 2d 2f 86>";
     const password = "secret";
