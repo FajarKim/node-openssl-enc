@@ -124,6 +124,13 @@ const {
   encryptIDAES256GCM, decryptIDAES256GCM
 } = require("./lib/id/index");
 const {
+  encryptSEED, decryptSEED,
+  encryptSEEDCBC, decryptSEEDCBC,
+  encryptSEEDCFB, decryptSEEDCFB,
+  encryptSEEDECB, decryptSEEDECB,
+  encryptSEEDOFB, decryptSEEDOFB
+} = require("./lib/seed/index");
+const {
   encryptSM4, decryptSM4,
   encryptSM4CBC, decryptSM4CBC,
   encryptSM4CFB, decryptSM4CFB,
@@ -259,6 +266,11 @@ module.exports = {
   encryptIDAES192GCM, decryptIDAES192GCM,
   encryptIDAES256CCM, decryptIDAES256CCM,
   encryptIDAES256GCM, decryptIDAES256GCM,
+  encryptSEED, decryptSEED,
+  encryptSEEDCBC, decryptSEEDCBC,
+  encryptSEEDCFB, decryptSEEDCFB,
+  encryptSEEDECB, decryptSEEDECB,
+  encryptSEEDOFB, decryptSEEDOFB,
   encryptSM4, decryptSM4,
   encryptSM4CBC, decryptSM4CBC,
   encryptSM4CFB, decryptSM4CFB,
