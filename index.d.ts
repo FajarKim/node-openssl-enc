@@ -149,6 +149,22 @@ declare module "@fajarkim/node-openssl-enc" {
     (algorithm: Algorithm, data: Buffer | string, password: string, extra?: string | null): DecryptionResult;
   }
 
+  interface EncryptBase64 {
+    (data: Buffer | string): string;
+  }
+
+  interface DecryptBase64 {
+    (data: string): Buffer | string;
+  }
+
+  interface EncryptZlib {
+    (data: Buffer | string): Buffer;
+  }
+
+  interface DecryptZlib {
+    (data: Buffer): Buffer | string;
+  }
+
   const algorithmList: AlgorithmList;
 
   const encrypt: Encrypt;
@@ -295,6 +311,10 @@ declare module "@fajarkim/node-openssl-enc" {
     encryptSM4CFB, decryptSM4CFB,
     encryptSM4CTR, decryptSM4CTR,
     encryptSM4ECB, decryptSM4ECB,
-    encryptSM4OFB, decryptSM4OFB
+    encryptSM4OFB, decryptSM4OFB,
+    EncryptBase64, DecryptBase64,
+    encryptBase64, decryptBase64,
+    EncryptZlib, DecryptZlib,
+    encryptZlib, decryptZlib
   };
 }
