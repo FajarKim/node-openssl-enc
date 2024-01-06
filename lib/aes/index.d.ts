@@ -110,6 +110,7 @@ declare module "lib/aes" {
   const decryptAES256OFB: AESDecryptionResult;
 
   export {
+    AESEncryptionResult, AESDecryptionResult,
     encryptAES128, decryptAES128,
     encryptAES128CBC, decryptAES128CBC,
     encryptAES128CCM, decryptAES128CCM,

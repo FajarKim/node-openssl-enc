@@ -83,6 +83,7 @@ declare module "lib/camellia" {
   const decryptCAMELLIA256OFB: CAMELLIADecryptionResult;
 
   export {
+    CAMELLIAEncryptionResult, CAMELLIADecryptionResult,
     encryptCAMELLIA128, decryptCAMELLIA128,
     encryptCAMELLIA128CBC, decryptCAMELLIA128CBC,
     encryptCAMELLIA128CFB, decryptCAMELLIA128CFB,

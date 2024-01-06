@@ -101,6 +101,7 @@ declare module "lib/aria" {
   const decryptARIA256OFB: ARIADecryptionResult;
 
   export {
+    ARIAEncryptionResult, ARIADecryptionResult,
     encryptARIA128, decryptARIA128,
     encryptARIA128CBC, decryptARIA128CBC,
     encryptARIA128CCM, decryptARIA128CCM,
