@@ -3,11 +3,23 @@
   "version": "0.0.4",
   "description": "A Node.js CLI tool and library for encryption and decryption with OpenSSL Enc.",
   "main": "index.js",
+  "types": "index.d.ts",
   "bin": {
     "ncssl": "bin/cli.js"
   },
   "scripts": {
     "test": "mocha ./test/**"
+  },
+  "files": [
+    "bin/*.js",
+    "lib/**/*.js",
+    "lib/**/*.d.ts",
+    "index.js",
+    "index.d.ts"
+  ],
+  "directories": {
+    "bin": "bin",
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
@@ -32,6 +44,29 @@
     "url": "https://github.com/FajarKim/node-openssl-enc/issues"
   },
   "homepage": "https://github.com/FajarKim/node-openssl-enc#readme",
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://buymeacoffee.com/fajarkim"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Rangga Fajar Oktariansyah",
+      "githubUsername": "FajarKim",
+      "url": "https://github.com/FajarKim"
+    },
+    {
+      "name": "John Chawdrey",
+      "githubUsername": "qwerty652",
+      "url": "https://github.com/qwerty652"
+    },
+    {
+      "name": "Xavier Nichole",
+      "githubUsername": "XavierNotFound",
+      "url": "https://github.com/XavierNotFound"
+    }
+  ],
   "dependencies": {
     "commander": "^11.1.0"
   },
