@@ -12,8 +12,9 @@
   },
   "files": [
     "bin/*.js",
-    "lib/**/*.js",
-    "lib/**/*.d.ts",
+    "lib/*.js",
+    "lib/*/*.js",
+    "lib/*/*.d.ts",
     "index.js",
     "index.d.ts"
   ],
