@@ -41,8 +41,8 @@ for (let i = 0; i < algorithmSupported.length; i += 1) {
       const password = "secret";
       const extra = "binary";
 
-      const encryptedData = encrypt(algorithm, data, password);
-      const decryptedData = decrypt(algorithm, encryptedData, password);
+      const encryptedData = encrypt(algorithm, data, password, extra);
+      const decryptedData = decrypt(algorithm, encryptedData, password, extra);
 
       assert.ok(encryptedData);
       assert.ok(decryptedData);
@@ -54,8 +54,8 @@ for (let i = 0; i < algorithmSupported.length; i += 1) {
       const password = "secret";
       const extra = "hex";
 
-      const encryptedData = encrypt(algorithm, data, password);
-      const decryptedData = decrypt(algorithm, encryptedData, password);
+      const encryptedData = encrypt(algorithm, data, password, extra);
+      const decryptedData = decrypt(algorithm, encryptedData, password, extra);
 
       assert.ok(encryptedData);
       assert.ok(decryptedData);
@@ -67,8 +67,8 @@ for (let i = 0; i < algorithmSupported.length; i += 1) {
       const password = "secret";
       const extra = "zlib";
 
-      const encryptedData = encrypt(algorithm, data, password);
-      const decryptedData = decrypt(algorithm, encryptedData, password);
+      const encryptedData = encrypt(algorithm, data, password, extra);
+      const decryptedData = decrypt(algorithm, encryptedData, password, extra);
 
       assert.ok(encryptedData);
       assert.ok(decryptedData);
