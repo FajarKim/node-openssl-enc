@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
+const { execSync } = require("child_process");
 const { program } = require("commander");
 const {
   encrypt, decrypt,
@@ -15,29 +16,29 @@ const {
 const packageJsonPath = path.join(__dirname, "../package.json");
 const packageJson = require(packageJsonPath);
 
-const maxColumn = 15;
+const opensslVersion = String(execSync("node -p \"process.versions.openssl\"")).replace("\n", "");
+const programName = String(process.argv.slice(1,2)).replace(/.+\//g, "");
 
 program
-  .version(`Node OpenSSL Enc ${packageJson.version} (Library: Crypto Node.js ${process.versions.node})`)
-  .description("Node OpenSSL Enc (ncssl) is encryption and decryption data stdin or file with OpenSSL Ciphers")
-  .option("-c, --cipher <cipher>", "Specify cipher for encrypt or decrypt")
-  .option("-f, --file <file>", "Specify input path file for encrypt or decrypt")
-  .option("-p, --passkey <pass>", "Specify passphrase key")
-  .option("-d, --dec", "Decrypted data stdin or file")
-  .option("-o, --out <out>", "Saved encryption or decryption to out file")
-  .option("-l, --list", "List all supported ciphers")
-  .option("-a, --base64", "Encrypt or Decrypt out data using Base64")
-  .option("-b, --binary", "Encrypt or Decrypt out data using Binary")
-  .option("-H, --hex", "Encrypt or Decrypt data out using Hex")
-  .option("-z, --zlib", "Encrypt or Decrypt out data using Zlib")
-  .option("-s, --special <mode>", "Special tool for encryption/decryption with\nBase64 or Zlib (not with cipher)")
+  .version(`Node OpenSSL Enc ${packageJson.version} (Library: OpenSSL ${opensslVersion})`)
+  .description(`Node OpenSSL Enc (${programName}) is encryption and decryption data stdin or file with OpenSSL Ciphers`)
+  .option("-c, --cipher <cipher>", "select cipher for encrypt or decrypt")
+  .option("-f, --file <file>", "input path file for encrypt or decrypt")
+  .option("-p, --passkey <pass>", "input passphrase key")
+  .option("-d, --dec", "decrypted data stdin or file")
+  .option("-o, --out <out>", "saved encryption or decryption to out file")
+  .option("-l, --list", "list all supported ciphers")
+  .option("-a, --base64", "extra encrypt or decrypt data stdout using base64")
+  .option("-b, --binary", "extra encrypt or decrypt data stdout using binary")
+  .option("-H, --hex", "extra encrypt or decrypt data stdout using hex")
+  .option("-z, --zlib", "extra encrypt or decrypt data stdout using zlib")
+  .option("-s, --special <mode>", "special tool for encryption/decryption with\nbase64 or zlib (without cipher)")
   .action((options) => {
     const { cipher, file, passkey, dec, out, list, base64, binary, hex, zlib, special } = options;
-    const prog = program.name();
 
     try {
       if (list) {
-        const columns = calculateColumns(algorithmSupported, maxColumn);
+        const columns = calculateColumns(algorithmSupported);
         console.log("List supported ciphers:\n");
         console.log(formatArrayToTable(algorithmSupported, columns));
         process.exit(0);
@@ -51,21 +52,21 @@ program
       var specialMode = "";
       if (! special) {
         if (! passkey || ! cipher) {
-          console.error(`${prog}: missing required operand`);
-          console.log(`Try '${prog} -h' for more information.`)
+          console.error(`${programName}: missing required operand`);
+          console.log(`Try '${programName} -h' for more information.`)
           process.exit(1);
         }
         if (algorithmUnsupported.includes(cipher.toLowerCase())) {
-          console.error(`${prog}: the cipher '${cipher}' is not supported for this tool`);
-          console.log(`Try '${prog} -l' for list all cipher supported.`);
+          console.error(`${programName}: the cipher '${cipher}' is not supported for this tool`);
+          console.log(`Try '${programName} -l' for list all cipher supported.`);
           process.exit(1);
         } else if (! algorithmSupported.includes(cipher.toLowerCase())) {
-          console.error(`${prog}: '${cipher}' is not cipher`);
-          console.log(`Try '${prog} -l' for list all cipher supported.`);
+          console.error(`${programName}: '${cipher}' is not cipher`);
+          console.log(`Try '${programName} -l' for list all cipher supported.`);
           process.exit(1);
         }
       } else if (! specialEnc.includes(special.toLowerCase())) {
-        console.error(`${prog}: '${special}' is not mode for special enc`)
+        console.error(`${programName}: '${special}' is not mode for special enc`)
         process.exit(1);
       } else {
         var specialMode = special.toLowerCase();
@@ -90,7 +91,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${prog}: Decryption completed`);
+              console.info(`${programName}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -101,7 +102,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${prog}: Decryption completed`);
+              console.info(`${programName}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -116,7 +117,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${prog}: Decryption completed`);
+              console.info(`${programName}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -129,7 +130,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${prog}: Encryption completed`);
+              console.info(`${programName}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -140,7 +141,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${prog}: Encryption completed`);
+              console.info(`${programName}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -151,7 +152,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${prog}: Encryption completed`);
+              console.info(`${programName}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -260,7 +261,7 @@ program
         }
       }
     } catch(error) {
-      console.error(`${prog}: ${error.message}`);
+      console.error(`${programName}: ${error.message}`);
       const errorCode = typeof error.code === "number" ? error.code : 1;
       process.exit(errorCode);
     }
