@@ -87,18 +87,13 @@ To start using Node OpenSSL, follow these steps:
 
   Options:
     -V, --version          output the version number
-    -c, --cipher <cipher>  Specify cipher for encrypt or decrypt
-    -f, --file <file>      Specify input path file for encrypt or decrypt
-    -p, --passkey <pass>   Specify passphrase key
-    -d, --dec              Decrypted data stdin or file
-    -o, --out <out>        Saved encryption or decryption to out file
-    -l, --list             List all supported ciphers
-    -a, --base64           Encrypt or Decrypt out data using Base64
-    -b, --binary           Encrypt or Decrypt out data using Binary
-    -H, --hex              Encrypt or Decrypt data out using Hex
-    -z, --zlib             Encrypt or Decrypt out data using Zlib
-    -s, --special <mode>   Special tool for encryption/decryption with
-                           Base64 or Zlib (not with cipher)
+    -c, --cipher <cipher>  select cipher for encrypt or decrypt
+    -f, --file <file>      input path file for encrypt or decrypt
+    -p, --passkey <pass>   input passphrase key
+    -d, --dec              decrypted data stdin or file
+    -o, --out <out>        saved encryption or decryption to out file                                                     -l, --list             list all supported ciphers
+    -a, --base64           extra encrypt or decrypt data stdout using base64                                              -b, --binary           extra encrypt or decrypt data stdout using binary                                              -H, --hex              extra encrypt or decrypt data stdout using hex
+    -z, --zlib             extra encrypt or decrypt data stdout using zlib                                                -s, --special <mode>   special tool for encryption/decryption with                                                    base64 or zlib (without cipher)
     -h, --help             display help for command
 
   This tool licensed under AGPL-3.0 License, see <https://github.com/FajarKim/node-openssl-enc/tree/master/LICENSE>
