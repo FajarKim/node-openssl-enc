@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
-const { execSync } = require("child_process");
 const { program } = require("commander");
 const {
   encrypt, decrypt,
@@ -16,11 +15,10 @@ const {
 const packageJsonPath = path.join(__dirname, "../package.json");
 const packageJson = require(packageJsonPath);
 
-const opensslVersion = String(execSync("node -p \"process.versions.openssl\"")).replace("\n", "");
 const programName = String(process.argv.slice(1,2)).replace(/.+\//g, "");
 
 program
-  .version(`Node OpenSSL Enc ${packageJson.version} (Library: OpenSSL ${opensslVersion})`)
+  .version(`Node OpenSSL Enc ${packageJson.version} (Library: OpenSSL ${process.versions.openssl})`)
   .description(`Node OpenSSL Enc (${programName}) is encryption and decryption data stdin or file with OpenSSL Ciphers`)
   .option("-c, --cipher <cipher>", "select cipher for encrypt or decrypt")
   .option("-f, --file <file>", "input path file for encrypt or decrypt")
