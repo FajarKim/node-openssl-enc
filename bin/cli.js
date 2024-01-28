@@ -18,7 +18,11 @@ const packageJson = require(packageJsonPath);
 
 const __program = String(process.argv.slice(1,2)).replace(/.+\//g, "");
 
-process.stdout.write(execSync(`node ${__dirname}/../lib/check-version.js`, { encoding: "utf-8" }));
+try {
+  process.stdout.write(execSync(`node ${__dirname}/../lib/check-version.js`, { encoding: "utf-8" }));
+} catch(error) {
+  process.stdout.write("")
+}
 
 program
   .version(`Node OpenSSL Enc ${packageJson.version} (Library: OpenSSL ${process.versions.openssl})`)
