@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const path = require("path");
+const { execSync } = require("child_process");
 const { program } = require("commander");
 const {
   encrypt, decrypt,
@@ -15,11 +16,13 @@ const {
 const packageJsonPath = path.join(__dirname, "../package.json");
 const packageJson = require(packageJsonPath);
 
-const programName = String(process.argv.slice(1,2)).replace(/.+\//g, "");
+const __program = String(process.argv.slice(1,2)).replace(/.+\//g, "");
+
+process.stdout.write(execSync(`node ${__dirname}/../lib/check-version.js`, { encoding: "utf-8" }));
 
 program
   .version(`Node OpenSSL Enc ${packageJson.version} (Library: OpenSSL ${process.versions.openssl})`)
-  .description(`Node OpenSSL Enc (${programName}) is encryption and decryption data stdin or file with OpenSSL Ciphers`)
+  .description(`Node OpenSSL Enc (${__program}) is encryption and decryption data stdin or file with OpenSSL Ciphers`)
   .option("-c, --cipher <cipher>", "select cipher for encrypt or decrypt")
   .option("-f, --file <file>", "input path file for encrypt or decrypt")
   .option("-p, --passkey <pass>", "input passphrase key")
@@ -50,21 +53,21 @@ program
       var specialMode = "";
       if (! special) {
         if (! passkey || ! cipher) {
-          console.error(`${programName}: missing required operand`);
-          console.log(`Try '${programName} -h' for more information.`)
+          console.error(`${__program}: missing required operand`);
+          console.log(`Try '${__program} -h' for more information.`)
           process.exit(1);
         }
         if (algorithmUnsupported.includes(cipher.toLowerCase())) {
-          console.error(`${programName}: the cipher '${cipher}' is not supported for this tool`);
-          console.log(`Try '${programName} -l' for list all cipher supported.`);
+          console.error(`${__program}: the cipher '${cipher}' is not supported for this tool`);
+          console.log(`Try '${__program} -l' for list all cipher supported.`);
           process.exit(1);
         } else if (! algorithmSupported.includes(cipher.toLowerCase())) {
-          console.error(`${programName}: '${cipher}' is not cipher`);
-          console.log(`Try '${programName} -l' for list all cipher supported.`);
+          console.error(`${__program}: '${cipher}' is not cipher`);
+          console.log(`Try '${__program} -l' for list all cipher supported.`);
           process.exit(1);
         }
       } else if (! specialEnc.includes(special.toLowerCase())) {
-        console.error(`${programName}: '${special}' is not mode for special enc`)
+        console.error(`${__program}: '${special}' is not mode for special enc`)
         process.exit(1);
       } else {
         var specialMode = special.toLowerCase();
@@ -89,7 +92,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${programName}: Decryption completed`);
+              console.info(`${__program}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -100,7 +103,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${programName}: Decryption completed`);
+              console.info(`${__program}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -115,7 +118,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, decrypted);
-              console.info(`${programName}: Decryption completed`);
+              console.info(`${__program}: Decryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(decrypted);
@@ -128,7 +131,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${programName}: Encryption completed`);
+              console.info(`${__program}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -139,7 +142,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${programName}: Encryption completed`);
+              console.info(`${__program}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -150,7 +153,7 @@ program
 
             if (out) {
               fs.writeFileSync(out, encrypted);
-              console.info(`${programName}: Encryption completed`);
+              console.info(`${__program}: Encryption completed`);
               console.log(`The result saved to '${out}'.`);
             } else {
               process.stdout.write(encrypted);
@@ -259,17 +262,15 @@ program
         }
       }
     } catch(error) {
-      console.error(`${programName}: ${error.message}`);
+      console.error(`${__program}: ${error.message}`);
       const errorCode = typeof error.code === "number" ? error.code : 1;
       process.exit(errorCode);
     }
-  });
-
-program.on("--help", () => {
-  console.log("");
-  console.log(`This tool licensed under ${packageJson.license} License, see <${packageJson.homepage.replace("#readme", "")}/tree/master/LICENSE>`)
-  console.log(`Report any bugs to <${packageJson.bugs.url}>`);
-  console.log(`Full documentation <${packageJson.homepage}>`);
-});
-
-program.parse(process.argv);
+  })
+  .on("--help", () => {
+    console.log("");
+    console.log(`This tool licensed under ${packageJson.license} License, see <${packageJson.homepage.replace("#readme", "")}/tree/master/LICENSE>`)
+    console.log(`Report any bugs to <${packageJson.bugs.url}>`);
+    console.log(`Full documentation <${packageJson.homepage}>`);
+  })
+  .parse(process.argv);
