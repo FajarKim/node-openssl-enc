@@ -1,6 +1,6 @@
 {
   "name": "@fajarkim/node-openssl-enc",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "A Node.js CLI tool and library for encryption and decryption with OpenSSL Enc.",
   "main": "index.js",
   "types": "index.d.ts",
