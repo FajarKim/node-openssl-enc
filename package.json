@@ -69,7 +69,7 @@
     }
   ],
   "dependencies": {
-    "commander": "^12.0.0"
+    "commander": "^13.0.0"
   },
   "devDependencies": {
     "mocha": "^11.0.1"
